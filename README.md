@@ -34,13 +34,11 @@ TinyPNG将WebP, PNG and JPEG图片进行智能有损压缩，该压缩对视觉�
 11. **压缩错误自动重试**，超出重试次数输出错误文件列表，下次运行时自动重新压缩
 
 
-## mac一键配置
+## mac一键无脑运行
 
 1. 下载本项目文件
-2. 一键运行
-	```
-	./运行.sh
-	```
+2. 把```运行.sh```直接拖拽到命令行里面，回车运行
+<img src="./image/demo1.png" alt="image-20221108212239001" style="zoom:50%;" />
 
 
 ## 安装
@@ -51,17 +49,16 @@ TinyPNG将WebP, PNG and JPEG图片进行智能有损压缩，该压缩对视觉�
 	pip3 install -r requirements.txt
 	```
 
-
-### 使用
+## 使用
 
 1. 压缩单文件
     ```bash
     path\to\your\python3 main.py file "path\to\your\image"
     ```
     
-2. 压缩单文件夹
+2. 压缩文件夹
    ```bash
-   path\to\your\python3 main.py dir "path\to\your\image\dir"
+   python3 bin/main.py dir --recur
    ```
    
 3. 使用配置文件批量压缩
@@ -98,4 +95,4 @@ TinyPNG将WebP, PNG and JPEG图片进行智能有损压缩，该压缩对视觉�
 
 ## 截图
 
-<img src="./1679464928376.png" alt="image-20221108212239001" style="zoom:50%;" />
+<img src="./image/1679464928376.png" alt="image-20221108212239001" style="zoom:50%;" />
